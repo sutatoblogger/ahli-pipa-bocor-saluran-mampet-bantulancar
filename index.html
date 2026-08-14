@@ -259,10 +259,19 @@
 
     <main class="pt-24 pb-16 flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
 
-        <!-- ================= HERO SECTION ================= -->
-        <section class="mt-6 mb-20 relative bg-cover bg-center bg-no-repeat rounded-[2rem] border border-white/5 overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.6)]" style="background-image: linear-gradient(to bottom, rgba(3,7,18,0.6) 0%, rgba(3,7,18,0.98) 100%), url('assets/hero-plumbing.webp');">
-            <div class="absolute inset-0 bg-auraEmerald/10 blur-[100px] pointer-events-none"></div>
+        <!-- ================= HERO SECTION (LCP OPTIMIZED) ================= -->
+        <section class="mt-6 mb-20 relative rounded-[2rem] border border-white/5 overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.6)]">
             
+            <!-- GAMBAR HERO DIUBAH MENJADI TAG IMG UNTUK LCP HIJAU -->
+            <img src="assets/hero-plumbing.webp" alt="Ahli Pipa Bocor Saluran Mampet" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover z-0">
+            
+            <!-- GRADIENT OVERLAY -->
+            <div class="absolute inset-0 bg-gradient-to-b from-[#030712]/60 to-[#030712]/98 z-0"></div>
+            
+            <!-- GLOW EFFECT -->
+            <div class="absolute inset-0 bg-auraEmerald/10 blur-[100px] pointer-events-none z-0"></div>
+            
+            <!-- KONTEN TEKS HERO -->
             <div class="relative z-10 max-w-4xl mx-auto text-center px-4 py-24 md:py-32">
                 <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-auraEmerald/30 bg-auraEmerald/10 text-xs font-bold text-auraEmerald mb-8 uppercase tracking-widest shadow-lg">
                     <span class="w-2 h-2 rounded-full bg-auraEmerald animate-pulse"></span> Siaga Darurat 24 Jam Jakarta & Depok
@@ -285,7 +294,6 @@
                 </p>
                 
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-5">
-                    <!-- CTA WA Hero -->
                     <a href="https://wa.me/6289531833352?text=Halo%20BANTU%20LANCAR,%20Tolong%20panggil%20teknisi%20sekarang%20untuk%20perbaikan%20pipa/saluran%20mampet%20di%20lokasi%20saya." target="_blank" class="w-full sm:w-auto px-10 py-4 bg-auraEmerald text-obsidian font-extrabold text-lg rounded-full hover:scale-105 transition-transform shadow-[0_10px_20px_rgba(16,185,129,0.3)]">
                         Panggil Teknisi Sekarang
                     </a>
