@@ -253,10 +253,11 @@
 
         <!-- ================= HERO SECTION (ATTENTION) ================= -->
         <!-- Menghapus kotak video, membuat background full elegan, memusatkan tulisan -->
-        <section class="mb-20 pt-24 pb-28 relative bg-cover bg-center bg-no-repeat rounded-[2.5rem] border border-white/10 overflow-hidden shadow-2xl" style="background-image: linear-gradient(to bottom, rgba(3,7,18,0.85), rgba(3,7,18,0.95)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200');">
-            <div class="absolute inset-0 bg-auraEmerald/10 blur-[120px] pointer-events-none"></div>
+        <!-- ================= HERO SECTION (FIXED & CLEAN) ================= -->
+        <section class="mt-6 mb-20 relative bg-cover bg-center bg-no-repeat rounded-[2rem] border border-white/5 overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.6)]" style="background-image: linear-gradient(to bottom, rgba(3,7,18,0.6) 0%, rgba(3,7,18,0.98) 100%), url('assets/img/hero-plumbing.webp');">
+            <div class="absolute inset-0 bg-auraEmerald/10 blur-[100px] pointer-events-none"></div>
             
-            <div class="relative z-10 max-w-4xl mx-auto text-center px-4">
+            <div class="relative z-10 max-w-4xl mx-auto text-center px-4 py-24 md:py-32">
                 <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-auraEmerald/30 bg-auraEmerald/10 text-xs font-bold text-auraEmerald mb-8 uppercase tracking-widest shadow-lg">
                     <span class="w-2 h-2 rounded-full bg-auraEmerald animate-pulse"></span> Siaga Darurat 24 Jam Jakarta & Depok
                 </div>
@@ -506,6 +507,49 @@
                 <p class="mt-8 pt-6 border-t border-white/10 font-medium">Keselamatan properti Anda adalah prioritas kami. Jangan pertaruhkan struktur bangunan Anda pada jasa <em>plumbing</em> abal-abal. Percayakan pemeliharaan perpipaan Anda pada BANTU LANCAR. Klik tautan jaringan layanan spesifik kami di bagian bawah situs ini untuk melihat cakupan area kerja kami secara detail.</p>
             </div>
         </article>
+		<!-- ================= LOKASI KANTOR (STATIC MAPS ZERO-BLOAT) ================= -->
+        <section class="mb-24 max-w-5xl mx-auto px-4 sm:px-0">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Kunjungi Basecamp Kami</h2>
+                <p class="text-slate-400">Pusat operasional dan perlengkapan plumbing BANTU LANCAR.</p>
+            </div>
+            
+            <div class="glass-card p-4 md:p-6 border-white/5 hover:border-auraEmerald/40 transition-colors">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    
+                    <div class="space-y-6 px-4 py-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-auraEmerald/10 flex items-center justify-center text-auraEmerald text-xl shrink-0">📍</div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">Alamat Lengkap</h4>
+                                <p class="text-sm text-slate-400 leading-relaxed">Jl. Panglima Polim, RT.8/RW.1, Pulo, Kec. Kby. Baru, Kota Jakarta Selatan, DKI Jakarta 12160</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-auraEmerald/10 flex items-center justify-center text-auraEmerald text-xl shrink-0">🕒</div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">Jam Operasional</h4>
+                                <p class="text-sm text-slate-400 leading-relaxed">Senin - Minggu (Siaga Darurat 24 Jam)</p>
+                            </div>
+                        </div>
+                        <a href="https://share.google/FF1VZUb8Svv0JqWHp" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/20 text-white font-bold text-sm rounded-full hover:bg-auraEmerald hover:text-obsidian hover:border-auraEmerald transition-all mt-4">
+                            Buka di Google Maps ↗
+                        </a>
+                    </div>
+
+                    <a href="https://share.google/FF1VZUb8Svv0JqWHp" target="_blank" rel="noopener noreferrer" class="block relative group overflow-hidden rounded-2xl border border-white/10">
+                        <div class="absolute inset-0 bg-auraEmerald/20 opacity-0 group-hover:opacity-100 transition-opacity z-10"></div>
+                        <img src="assets/img/google-maps-bangun-lancar-plumbing.webp" alt="Peta Lokasi Bantu Lancar Plumbing Google Maps Jakarta Selatan" class="w-full h-[250px] object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
+                            <div class="w-16 h-16 bg-white rounded-full shadow-xl flex items-center justify-center opacity-90 group-hover:scale-110 transition-transform">
+                                <span class="text-3xl ml-1">📍</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
 
         <!-- ================= FAQ VISUAL (5 POIN) ================= -->
         <section id="faq" class="mb-24">
