@@ -259,19 +259,19 @@
 
     <main class="pt-24 pb-16 flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
 
-        <!-- ================= HERO SECTION (LCP OPTIMIZED) ================= -->
+        <!-- ================= HERO SECTION (LCP FULLY OPTIMIZED) ================= -->
         <section class="mt-6 mb-20 relative rounded-[2rem] border border-white/5 overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.6)]">
             
-            <!-- GAMBAR HERO DIUBAH MENJADI TAG IMG UNTUK LCP HIJAU -->
-            <img src="assets/hero-plumbing.webp" alt="Ahli Pipa Bocor Saluran Mampet" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover z-0">
+            <!-- GAMBAR HERO MURNI HTML (BEBAS CSS BLOCKING) -->
+            <img src="assets/hero-plumbing.webp" alt="Ahli Saluran Mampet & Pipa Bocor Jakarta Depok" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover z-0">
             
-            <!-- GRADIENT OVERLAY -->
-            <div class="absolute inset-0 bg-gradient-to-b from-[#030712]/60 to-[#030712]/98 z-0"></div>
+            <!-- GRADIENT GELAP OVERLAY (MEMBUAT TEKS TERBACA) -->
+            <div class="absolute inset-0 bg-gradient-to-b from-[#030712]/70 to-[#030712]/95 z-0 pointer-events-none"></div>
             
-            <!-- GLOW EFFECT -->
+            <!-- EFEK GLOW EMERALD -->
             <div class="absolute inset-0 bg-auraEmerald/10 blur-[100px] pointer-events-none z-0"></div>
             
-            <!-- KONTEN TEKS HERO -->
+            <!-- KONTEN TEKS HERO (DIPOSISIKAN DI ATAS GAMBAR DENGAN Z-INDEX 10) -->
             <div class="relative z-10 max-w-4xl mx-auto text-center px-4 py-24 md:py-32">
                 <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-auraEmerald/30 bg-auraEmerald/10 text-xs font-bold text-auraEmerald mb-8 uppercase tracking-widest shadow-lg">
                     <span class="w-2 h-2 rounded-full bg-auraEmerald animate-pulse"></span> Siaga Darurat 24 Jam Jakarta & Depok
@@ -283,7 +283,7 @@
                 </h1>
                 
                 <div class="inline-block relative mb-8">
-                    <div class="absolute inset-0 bg-auraEmerald blur-lg opacity-40"></div>
+                    <div class="absolute inset-0 bg-auraEmerald blur-lg opacity-40 pointer-events-none"></div>
                     <div class="relative z-10 px-8 py-3 bg-gradient-to-r from-auraEmerald to-emerald-500 text-obsidian text-xl md:text-3xl font-extrabold rounded-lg transform -skew-x-6 border border-white/30">
                         BIAYA MURAH & TANPA BONGKAR ACAK!
                     </div>
@@ -303,7 +303,6 @@
                 </div>
             </div>
         </section>
-
         <!-- ================= BENTO GRID TENTANG KAMI ================= -->
         <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
             <div class="md:col-span-2 glass-card p-8 lg:p-10 relative overflow-hidden group">
